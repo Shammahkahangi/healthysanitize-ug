@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import WhyChoose from "@/components/WhyChoose";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <img src={logo} alt="Clinova Logo" className="h-12 w-auto mb-4 brightness-0 invert" />
+            <img src={logo} alt="Clinova Logo" className="h-12 w-auto mb-4" />
             <p className="text-primary-foreground/80 max-w-md">
               Setting the standard in medical-grade hygiene solutions for healthcare 
               facilities across Uganda.

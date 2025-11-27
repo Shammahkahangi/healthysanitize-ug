@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/60">
+        <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/80">
           <p>&copy; {new Date().getFullYear()} Clinova - M&T Cleaners Limited. All rights reserved.</p>
         </div>
       </div>

@@ -5,10 +5,12 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Clinova providing medical-grade hospital laundry services in Kampala, Uganda"
+          className="h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/70 to-primary/50" />
       </div>
       
@@ -16,16 +18,16 @@ const Hero = () => {
         <div className="max-w-3xl">
           <div className="mb-8 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-              Medical-Grade
+              Hospital laundry
               <br />
-              <span className="text-secondary">Hygiene Solutions</span>
+              <span className="text-secondary">services in Kampala</span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 font-medium">
               Setting the standard, one wash at a time
             </p>
             <p className="text-lg text-primary-foreground/80 max-w-2xl">
-              Specialized healthcare laundry services for hospitals across Uganda. 
-              24/7 operations, medical-grade cleaning, and zero-shortage assurance.
+              Medical-grade linen for hospitals across Uganda.
+              24/7 operations, infection control, and zero-shortage assurance.
             </p>
           </div>
           

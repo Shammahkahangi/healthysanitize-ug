@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <img src={logo} alt="Clinova Logo" className="h-12 w-auto mb-4" />
+            <img src={logo} alt="Clinova — hospital laundry Uganda" className="h-12 w-auto mb-4" />
             <p className="text-primary-foreground/80 max-w-md">
               Setting the standard in medical-grade hygiene solutions for healthcare 
               facilities across Uganda.
@@ -26,10 +26,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>Hospital Linen</li>
-              <li>Medical-Grade Cleaning</li>
-              <li>24/7 Operations</li>
-              <li>Full Management</li>
+              <li><a href="#services" className="hover:text-secondary transition-colors">Hospital Linen</a></li>
+              <li><a href="#services" className="hover:text-secondary transition-colors">Medical-Grade Cleaning</a></li>
+              <li><a href="#services" className="hover:text-secondary transition-colors">24/7 Operations</a></li>
+              <li><a href="#services" className="hover:text-secondary transition-colors">Full Management</a></li>
             </ul>
           </div>
         </div>

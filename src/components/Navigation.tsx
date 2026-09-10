@@ -19,7 +19,9 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <img src={logo} alt="Clinova Logo" className="h-12 w-auto" />
+            <a href="#home">
+              <img src={logo} alt="Clinova — hospital laundry Uganda" className="h-12 w-auto" />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
@@ -33,9 +35,11 @@ const Navigation = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="default" size="sm">
-              Get Quote
-            </Button>
+            <a href="#contact">
+              <Button variant="default" size="sm">
+                Get Quote
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,9 +64,11 @@ const Navigation = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="default" size="sm" className="w-full mt-4">
-              Get Quote
-            </Button>
+            <a href="#contact" onClick={() => setIsOpen(false)}>
+              <Button variant="default" size="sm" className="w-full mt-4">
+                Get Quote
+              </Button>
+            </a>
           </div>
         )}
       </div>

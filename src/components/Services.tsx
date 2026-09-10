@@ -40,9 +40,10 @@ const Services = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Option One */}
           <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-            <div 
-              className="h-48 bg-cover bg-center"
-              style={{ backgroundImage: `url(${linenImage})` }}
+            <img
+              src={linenImage}
+              alt="Hospital linen folded after medical-grade washing and finishing"
+              className="h-48 w-full object-cover"
             />
             <div className="p-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">
@@ -71,9 +72,10 @@ const Services = () => {
             <div className="bg-secondary text-white py-2 px-4 text-sm font-semibold text-center">
               RECOMMENDED
             </div>
-            <div 
-              className="h-48 bg-cover bg-center"
-              style={{ backgroundImage: `url(${facilityImage})` }}
+            <img
+              src={facilityImage}
+              alt="Clinova laundry facility processing hospital linen in Uganda"
+              className="h-48 w-full object-cover"
             />
             <div className="p-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">

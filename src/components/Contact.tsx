@@ -31,9 +31,16 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold text-foreground mb-1">Address</p>
                     <p className="text-muted-foreground">
-                      Plot 2D/2E Nakasero Hill Road<br />
-                      P.O Box 148467<br />
-                      Kampala, Uganda
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=Plot+2D%2F2E+Nakasero+Hill+Road+Kampala+Uganda"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-primary transition-colors"
+                      >
+                        Plot 2D/2E Nakasero Hill Road<br />
+                        P.O Box 148467<br />
+                        Kampala, Uganda
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -45,8 +52,13 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold text-foreground mb-1">Phone</p>
                     <p className="text-muted-foreground">
-                      (+256) 785 609 370<br />
-                      (+256) 767 937 832
+                      <a href="tel:+256785609370" className="hover:text-primary transition-colors">
+                        (+256) 785 609 370
+                      </a>
+                      <br />
+                      <a href="tel:+256767937832" className="hover:text-primary transition-colors">
+                        (+256) 767 937 832
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -58,7 +70,9 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold text-foreground mb-1">Email</p>
                     <p className="text-muted-foreground">
-                      contact.us@Clinova.africa
+                      <a href="mailto:contact.us@Clinova.africa" className="hover:text-primary transition-colors">
+                        contact.us@Clinova.africa
+                      </a>
                     </p>
                   </div>
                 </div>

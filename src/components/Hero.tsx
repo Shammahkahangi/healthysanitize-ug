@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-cleaning.jpg";
 import { ArrowRight } from "lucide-react";
@@ -32,17 +33,17 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <a href="#contact">
+            <Link to="/contact">
               <Button size="lg" variant="secondary" className="text-lg group">
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
-            </a>
-            <a href="#services">
+            </Link>
+            <Link to="/services">
               <Button size="lg" className="text-lg border-2 border-primary-foreground bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                 Our Services
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

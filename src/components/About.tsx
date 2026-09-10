@@ -1,6 +1,7 @@
 import { Shield, Clock, Award, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const About = () => {
+const About = ({ moreHref, showIntro = true }: { moreHref?: string; showIntro?: boolean }) => {
   const features = [
     {
       icon: Shield,
@@ -27,6 +28,7 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
+        {showIntro && (
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             About <span className="text-primary">Clinova</span>
@@ -37,6 +39,7 @@ const About = () => {
             facilities. We uphold the highest standards of hygiene, safety, and reliability.
           </p>
         </div>
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
@@ -82,6 +85,14 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        {moreHref && (
+          <div className="text-center mt-10">
+            <Link to={moreHref} className="text-primary font-semibold hover:underline">
+              Read more about Clinova
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

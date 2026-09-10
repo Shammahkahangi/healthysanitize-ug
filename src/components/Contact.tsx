@@ -2,11 +2,13 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { MAPS_LINK } from "@/lib/site";
 
-const Contact = () => {
+const Contact = ({ showHeader = true }: { showHeader?: boolean }) => {
   return (
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
+        {showHeader && (
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Get in <span className="text-primary">Touch</span>
@@ -15,6 +17,7 @@ const Contact = () => {
             Ready to elevate your hospital's hygiene standards? Contact us today
           </p>
         </div>
+        )}
 
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
@@ -32,7 +35,7 @@ const Contact = () => {
                     <p className="font-semibold text-foreground mb-1">Address</p>
                     <p className="text-muted-foreground">
                       <a
-                        href="https://www.google.com/maps/search/?api=1&query=Plot+2D%2F2E+Nakasero+Hill+Road+Kampala+Uganda"
+                        href={MAPS_LINK}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-primary transition-colors"

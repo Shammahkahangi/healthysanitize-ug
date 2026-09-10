@@ -1,9 +1,10 @@
 import { Check } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import linenImage from "@/assets/linen-folding.jpg";
 import facilityImage from "@/assets/laundry-facility.jpg";
 
-const Services = () => {
+const Services = ({ moreHref }: { moreHref?: string } = {}) => {
   const optionOne = [
     "Scheduled collection & sorting from hospital points",
     "Medical-grade cleaning with calibrated industrial machines",
@@ -98,6 +99,14 @@ const Services = () => {
             </div>
           </Card>
         </div>
+
+        {moreHref && (
+          <div className="text-center mt-10">
+            <Link to={moreHref} className="text-secondary font-semibold hover:underline">
+              Compare partnership models
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );
